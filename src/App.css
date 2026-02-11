@@ -1,0 +1,38 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container{
+  max-width: 1200px;
+  margin: auto;
+}
+body{
+  background-color: black;
+  color: white;
+}
+::-webkit-scrollbar-thumb {
+  background: #004aad; 
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #004aad; 
+}
+.active{
+  background-color: #f3f4f6;
+  color: #4770ff;
+  fill: #4770ff;
+  padding: 3px;
+  font-weight: 600;
+  hover:{
+    background-color: #f3f4f6;
+  color: #4770ff;
+  font-weight: 600;
+  fill: #4770ff;
+  }
+}
+.particles-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
