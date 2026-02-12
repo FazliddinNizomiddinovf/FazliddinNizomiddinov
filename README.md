@@ -25,7 +25,7 @@
 
 <p align="center">
 
-<img src="https://skillicons.dev/icons?i=html,css,js,react,nextjs,tailwind,git,github,vscode" />
+<img src="https://skillicons.dev/icons?i=html,css,js,react,tailwind,github,vscode" />
 
 </p>
 
@@ -34,7 +34,6 @@
 ## 📊 GitHub Stats
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=FazliddinNizomiddinovf&show_icons=true&theme=tokyonight&hide_border=true" height="160"/>
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=FazliddinNizomiddinovf&theme=tokyonight&hide_border=true" height="160"/>
 </p>
 
