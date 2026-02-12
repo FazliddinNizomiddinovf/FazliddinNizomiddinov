@@ -48,27 +48,12 @@
 
 ---
 
-## 🐍 Contribution Snake
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/FazliddinNizomiddinovf/FazliddinNizomiddinovf/output/github-contribution-grid-snake.svg" />
-</p>
-
----
-
 ## 🌐 Connect With Me
 
 <p align="center">
-  <a href="https://t.me/username">
+  <a href="https://t.me/Fazliddin_iq">
     <img src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white"/>
-  </a>
-  <a href="https://linkedin.com/in/username">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/>
   </a>
 </p>
 
 ---
-
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:764ba2,100:667eea&height=120&section=footer"/>
-</p>
