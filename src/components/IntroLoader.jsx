@@ -1,0 +1,47 @@
+import { useEffect, useState } from "react";
+
+export default function IntroLoader() {
+  const fullText = "Welcome to My Portfolio";
+  const [displayText, setDisplayText] = useState("");
+  const [hide, setHide] = useState(false);
+  const [shouldShow, setShouldShow] = useState(false);
+
+  useEffect(() => {
+    // localStorage'da "introShown" bor yoki yo'qligini tekshirish
+    const introShown = localStorage.getItem("introShown");
+
+    if (!introShown) {
+      setShouldShow(true);
+
+      let index = 0;
+      const typingInterval = setInterval(() => {
+        setDisplayText(fullText.slice(0, index + 1));
+        index++;
+        if (index === fullText.length) {
+          clearInterval(typingInterval);
+          setTimeout(() => {
+            setHide(true);
+            localStorage.setItem("introShown", "true"); // endi keyinroq ko'rsatilmaydi
+          }, 1500);
+        }
+      }, 90);
+
+      return () => clearInterval(typingInterval);
+    }
+  }, []);
+
+  if (!shouldShow) return null; // Agar intro allaqachon ko'rsatilgan bo'lsa, hech narsa qaytarmaymiz
+
+  return (
+    <div
+      className={`fixed inset-0 z-[9999] flex items-center justify-center bg-black transition-all duration-1000 ${
+        hide ? "opacity-0 blur-sm pointer-events-none" : "opacity-100"
+      }`}
+    >
+      <h1 className="text-4xl md:text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-indigo-500">
+        {displayText}
+        <span className="ml-1 animate-pulse">|</span>
+      </h1>
+    </div>
+  );
+}

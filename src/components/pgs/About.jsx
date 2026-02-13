@@ -4,7 +4,7 @@ export default function About() {
 
     return (
         <div className="grid grid-cols-3 gap-10">
-            <div className="col-span-1 sticky top-10 z-30 bg-gradient-to-r from-[#0f172a]/80 via-[#1e293b]/80 to-[#020617]/80 backdrop-blur-xl border border-white/30 shadow-[0_10px_40px_rgba(0,0,0,0.4)] rounded-xl p-5">
+            <div className="col-span-1 sticky top-10 self-start h-fit z-30 bg-gradient-to-r from-[#0f172a]/80 via-[#1e293b]/80 to-[#020617]/80 backdrop-blur-xl border border-white/30 shadow-[0_10px_40px_rgba(0,0,0,0.4)] rounded-xl p-5">
                 <div className='w-[330px] mb-3'>
                     <img className=' rounded-lg' src="/fazliddin.jpg" alt="" />
                 </div>
@@ -59,9 +59,27 @@ export default function About() {
                 </div>
                 <h1 className='font-bold mb-5 text-2xl'>What I'm WOrking On 🚀</h1>
                 <div className='flex justify-between gap-5'>
-                    <div className='p-5 border rounded-xl'>handleScrollTop</div>
-                    <div className='p-5 border rounded-xl'>handleScrollTop</div>
-                    <div className='p-5 border rounded-xl'>handleScrollTop</div>
+                    <div className=' cursor-pointer relative z-10 overflow-hidden border border-white/30 rounded-lg'>
+                        <img className=' rounded-y-lg w-72' src="/Uic.png" alt="" />
+                        <div className='p-2'>
+                            <h1 className='font-semibold'>UIC Group</h1>
+                            <p>I am currently working on this project.</p>
+                        </div>
+                    </div>
+                    <div className=' cursor-pointer relative z-10 overflow-hidden border border-white/30 rounded-lg'>
+                        <img className=' rounded-y-lg w-72' src="/DX.png" alt="" />
+                        <div className='p-2'>
+                            <h1 className='font-semibold'>DX</h1>
+                        <p>I am currently working on this project.</p>
+                        </div>
+                    </div>
+                    <div className=' cursor-pointer relative z-10 overflow-hidden border border-white/30 rounded-lg'>
+                        <img className=' rounded-y-lg w-72' src="/market.png" alt="" />
+                        <div className='p-2'>
+                            <h1 className='font-semibold'>ULTRA Market</h1>
+                        <p>I am currently working on this project.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

@@ -36,3 +36,31 @@ body{
   width: 100%;
   height: 100%;
 }
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-25px); }
+}
+.animate {
+  animation: float 2s ease-in-out infinite;
+}
+/* Scrollning umumiy kengligi */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Scroll fon (background) */
+::-webkit-scrollbar-track {
+  background: #111; /* bg rang shu yerda */
+  border-radius: 10px;
+}
+
+/* Scrollning harakatlanuvchi qismi */
+::-webkit-scrollbar-thumb {
+  background: #4770ff;
+  border-radius: 10px;
+}
+
+/* Hover bo'lganda */
+::-webkit-scrollbar-thumb:hover {
+  background: #4770ff;
+}
